@@ -7,7 +7,6 @@ using namespace std;
 
 int mcm(int a, int b){
     /*a numero mayor , b numero menor */ 
-    cout << "variabels a "<<a << " variables b " <<b  << endl;
     if (a%b == 0){
         return b;
     }
@@ -25,9 +24,14 @@ int middle(vector<int> &rnumbers){
         return result;
     }
     result = mcm(rnumbers[1], rnumbers[0]);
-    for (unsigned i = 2; i <= rnumbers.size(); i++)
+    int x = 0;
+    for (unsigned i = 2; i <= rnumbers.size() - 1; i++)
     {
+        x++;
+        cout << "Numero de iteracion " << x << endl;
+        cout << "MCD para el valor "<< rnumbers[i] << " " << result << endl;
         result = mcm(rnumbers[i], result);
+    
     }
     
     return result; 
@@ -48,10 +52,7 @@ int main(){
     }while(flag != 0);
 
     sort(numbers.begin(), numbers.end());
-    cout << "Sorting  \n";
-    for(int i:numbers)
-        cout << i << " " ;
-
-    cout << "Maximo comun divisor: " << middle(numbers) << " \n";
+    cout << "Longitud " << numbers.size();
+    cout << "Maximo comun divisor: \n" << middle(numbers) << " \n";
     return 0;
 }
