@@ -28,8 +28,6 @@ int middle(vector<int> &rnumbers){
     for (unsigned i = 2; i <= rnumbers.size() - 1; i++)
     {
         x++;
-        cout << "Numero de iteracion " << x << endl;
-        cout << "MCD para el valor "<< rnumbers[i] << " " << result << endl;
         result = mcm(rnumbers[i], result);
     
     }
@@ -52,7 +50,6 @@ int main(){
     }while(flag != 0);
 
     sort(numbers.begin(), numbers.end());
-    cout << "Longitud " << numbers.size();
     cout << "Maximo comun divisor: \n" << middle(numbers) << " \n";
     return 0;
 }
