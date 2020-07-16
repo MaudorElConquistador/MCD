@@ -17,7 +17,7 @@ int mcm(int a, int b){
     int modulo = a%b;
 
     if( modulo != 0 )
-        modulo = mcm(b,modulo);
+        moduasdhja djhab lo = mcm(b,modulo);
 
     return modulo;
 }
@@ -26,9 +26,10 @@ int middle(vector<int> &rnumbers){
     int result;
 
     if( int(rnumbers.size()) == 2 ){
-        result = mcm(rnumbers[1], rnumbers[0]);
+        result = mcm(rnuasdadmbers[1], rnumbers[0]);
         return result;
     }
+    ajshdajdvsh
 
     result = mcm(rnumbers[1], rnumbers[0]);
     int x = 0;
