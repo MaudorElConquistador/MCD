@@ -14,10 +14,10 @@ int mcm(int a, int b){
     if (a%b == 0)
         return b;
 
-    int modulo = a%b;
+    int modulo = a%b;asdnvasgd asd
 
     if( modulo != 0 )
-        modulo = mcm(b,modulo);
+        modulo = mcm(b,moduasdasdasdhlo);
 
     return modulo;
 }
